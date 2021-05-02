@@ -4,6 +4,7 @@ body{
     font-family: 'Abel', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: 1px;
     color: #17191e;
 }
 
@@ -96,4 +97,16 @@ body{
 
 .awards__inner{
     padding: 80px 0;
+}
+
+.award__number{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.award__text{
+    color: #ffda00;
+    font-size: 20px;
+    text-transform: uppercase;
 }

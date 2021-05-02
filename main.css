@@ -4,6 +4,7 @@ body{
     font-family: 'Abel', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    color: #17191e;
 }
 
 /* Header Section */
@@ -32,14 +33,14 @@ body{
     height: 100%;
 }
 
-.hero__inner .hero__title{
+.hero__title{
     font-size: 176px;
     font-weight: 400;
     color: #ffda00;
     padding-top: 350px;
 }
 
-.hero__inner .hero__text{
+.hero__text{
     color: #fff;
 }
 
@@ -48,4 +49,51 @@ body{
     padding: 15px 66px;
     border-radius: 25px;
     color: #fff;
+}
+
+/* Quote Section */
+
+.quote{
+    height: 230px;
+    background: #ffda00;
+}
+
+.quote__text{
+    text-align: center;
+}
+
+/* Services Section */
+
+.services__inner{
+    padding: 118px 0;
+}
+
+.service__icon{
+    width: 77px;
+    height: 77px;
+    background: #ffda00;
+}
+
+.service__title{
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffda00;
+    text-transform: uppercase;
+}
+
+.services .btn{
+    border: 2px solid #ffda00;
+    padding: 15px 66px;
+    border-radius: 25px;
+    color: #17191e;
+}
+
+/* Awards Section */
+
+.awards{
+    background: #17191e;
+}
+
+.awards__inner{
+    padding: 80px 0;
 }

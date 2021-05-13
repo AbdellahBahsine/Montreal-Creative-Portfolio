@@ -8,6 +8,11 @@ body{
     color: #17191e;
 }
 
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* Header Section */
 
 .bars{
@@ -151,8 +156,7 @@ body{
 }
 
 .portfolio .otherCat{
-    width: 100%;
-    display: flex;
+    display: flex !important;
 }
 
 .portfolio .otherCatWidth{

@@ -19,6 +19,7 @@ $(document).ready(function(){
             $('.gallery').addClass('otherCat');
             $('.gallery__row').addClass('otherCat');
             $('.gallery__product').addClass('otherCatWidth')
+            
         }
     });
     

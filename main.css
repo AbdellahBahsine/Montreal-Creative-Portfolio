@@ -268,3 +268,53 @@ body{
 .swiper-pagination-bullet-active{
     background: #ffda00 !important;
 }
+
+/* Contact Section */
+
+.contact{
+    padding: 118px 0;
+}
+
+.contact__title{
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffda00;
+    text-transform: uppercase;
+}
+
+.contact__text{
+    font-size: 20px;
+    color: #17191e;
+}
+
+.contact input, .contact textarea{
+    border-radius: 0;
+    border: 2px solid #000;
+}
+
+.contact input::placeholder, .contact textarea::placeholder{
+    color: #000;
+}
+
+.contact input:focus, .contact textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ffda00 !important;
+}
+
+.contact input{
+    height: 52px;
+}
+
+.contact textarea{
+    height: 182px;
+    resize: none;
+}
+
+.contact .contact__btn{
+    border: 2px solid #ffda00;
+    border-radius: 35px;
+    padding: 16px 140px;
+    text-transform: uppercase;
+    margin-top: 38px;
+}

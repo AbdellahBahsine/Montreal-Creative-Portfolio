@@ -326,8 +326,39 @@ body{
     background: #ffda00;
 }
 
-.box{
+.info .box{
     width: 80px;
     height: 80px;
     background: #17191e;
+}
+
+/* Footer section */
+
+footer{
+    background: #17191e;
+    color: #fff;
+}
+
+.footer__inner{
+    position: relative;
+    padding: 68px 0;
+}
+
+.credit span{
+    color: #ffda00;
+}
+
+footer .box{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background: #ffda00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .box i {
+    color: #17191e;
 }

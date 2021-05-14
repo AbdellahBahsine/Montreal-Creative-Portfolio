@@ -318,3 +318,16 @@ body{
     text-transform: uppercase;
     margin-top: 38px;
 }
+
+/* Info section */
+
+.info{
+    padding: 68px 0;
+    background: #ffda00;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background: #17191e;
+}

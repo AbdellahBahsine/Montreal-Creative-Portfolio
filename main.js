@@ -24,13 +24,24 @@ $(document).ready(function(){
     });
     
     if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
 
-$('.count').counterUp({
-    delay: 10,
-    time: 1500
+    $('.count').counterUp({
+        delay: 10,
+        time: 1500
+    });
+
 });
 
+const swiper = new Swiper('.swiper-container', {
+    // How many slides to show
+    slidesPerView: 4,
+  
+    // pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
 });

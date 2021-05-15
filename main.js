@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $("#bars").click(function(){
+        $('#nav').toggleClass('show')
+    })
+
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         

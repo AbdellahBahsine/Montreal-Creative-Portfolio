@@ -11,6 +11,9 @@ $(document).ready(function(){
         {
             //$('.filter').removeClass('hidden');
             $('.filter').show('1000');
+            $('.gallery').removeClass('otherCat');
+            $('.gallery__row').removeClass('otherCat');
+            $('.gallery__product').removeClass('otherCatWidth')
         }
         else
         {

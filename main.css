@@ -15,6 +15,11 @@ body{
 
 /* Header Section */
 
+header .logo{
+    position: relative;
+    z-index: 1;
+}
+
 .header__inner{
     overflow: hidden;
     padding: 0 !important;
@@ -22,6 +27,7 @@ body{
 
 header nav{
     position: relative;
+    z-index: 1;
     right: -110%;
     opacity: 0;
 }
@@ -62,20 +68,10 @@ header .nav__link:hover{
 .hero{
     position: relative;
     height: 1080px; 
-    background-image: url('assets/images/leone-venter-pVt9j3iWtPM-unsplash.jpg');
+    background-image: url('assets/images/edu-lauton-TyQ-0lPp6e4-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.hero::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(23, 25, 30, .2);
 }
 
 .hero__inner{
@@ -99,6 +95,7 @@ header .nav__link:hover{
     padding: 15px 66px;
     border-radius: 25px;
     color: #fff;
+    cursor: pointer;
 }
 
 /* Quote Section */

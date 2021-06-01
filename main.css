@@ -563,8 +563,3 @@ footer .box i {
     }
 }
 
-@media screen and (max-width: 400px){
-    .gallery__overlay{
-        display: none !important;
-    }
-}

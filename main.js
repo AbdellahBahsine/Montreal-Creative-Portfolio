@@ -45,11 +45,23 @@ $(document).ready(function(){
 
 const swiper = new Swiper('.swiper-container', {
     // How many slides to show
-    slidesPerView: 4,
+    slidesPerView: 2,
   
     // pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    // Make slides responsive
+    breakpoints: {
+        // when window width is <= 499px
+        499: {
+            slidesPerView: 3,
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 4,
+        }
+    }
 });

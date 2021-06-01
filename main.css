@@ -17,7 +17,7 @@ body{
 
 header .logo{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__inner{
@@ -61,6 +61,10 @@ header .nav__link:hover{
     width: 17px;
     height: 2px;
     background: #17191e;
+}
+
+body .mobile__nav{
+    display: none !important;
 }
 
 /* Hero Section */
@@ -155,6 +159,7 @@ header .nav__link:hover{
     color: #ffda00;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Portfolio Section */
@@ -176,7 +181,7 @@ header .nav__link:hover{
 
 .portfolio .categories button{
     border: 2px solid #ffda00;
-    margin: 0 13px;
+    margin: 13px;
     border-radius: 0px;
     font-size: 20px;
 }
@@ -207,30 +212,24 @@ header .nav__link:hover{
 
 .portfolio .gallery__product{
     height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gallery-1 { 
     background-image: url(assets/images/design-1.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: gallery-1; 
     height: 900px !important; 
 }
 .gallery-2 { 
-    background-image: url(assets/images/design-5.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
+    background-image: url(assets/images/design-6.jpg); 
     grid-area: gallery-2;
     height: 450px;
 }
 
 .gallery-3 { 
     background-image: url(assets/images/design-2.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: gallery-3; 
     height: 450px;}
 
@@ -267,25 +266,16 @@ header .nav__link:hover{
 
 .gallery-4 { 
     background-image: url(assets/images/design-3.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: gallery-4; 
     height: 450px;
 }
 .gallery-5 { 
     background-image: url(assets/images/design-4.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: gallery-5; 
     height: 450px;
 }
 .gallery-6 { 
     background-image: url(assets/images/design-5.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: gallery-6; 
     height: 450px;
 }
@@ -435,6 +425,10 @@ header .nav__link:hover{
     background: #17191e;
 }
 
+.info .email{
+    margin: 0 25px;
+}
+
 /* Footer section */
 
 footer{
@@ -464,4 +458,113 @@ footer .box{
 
 footer .box i {
     color: #17191e;
+}
+
+
+@media screen and (max-width: 1125px){
+    .gallery__overlay{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .info .phone, .info .email, .info .address{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .info .box{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .hero{
+        height: 750px;
+    }
+
+    .hero__title{
+        font-size: 120px;
+        padding-top: 190px;
+    }
+}
+
+@media screen and (max-width: 910px){ 
+    .portfolio .otherCatWidth{
+        width: auto !important;
+        height: 450px !important;
+    }
+}
+
+@media screen and (max-width: 780px){
+
+    .nav{
+        display: none !important;
+    }
+
+    body .mobile__nav{
+        position: absolute;
+        top: 0;
+        right: -120%;
+        height: 100%;
+        width: 100%;
+        background: #17191e;
+        z-index: 1;
+    }
+
+    .mobile__nav.show{
+        right: 0;
+        opacity: 1;
+        display: flex !important;
+        transition: 0.6s;
+    }
+
+    .mobile__nav .nav__link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .mobile__nav .nav__link:hover{
+        color: #ffda00;
+        transition: 0.6s;
+    }
+
+    .portfolio__inner .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-areas: none;
+    }
+
+    .portfolio__inner .gallery-1{
+        height: 450px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .hero{
+        height: 750px;
+    }
+
+    .hero__title{
+        font-size: 80px;
+        padding-top: 190px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .portfolio__inner .gallery__row{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-areas: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .gallery__overlay{
+        display: none !important;
+    }
 }

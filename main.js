@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     $("#bars").click(function(){
         $('#nav').toggleClass('show')
+        $('#mobile__nav').toggleClass('show')
     })
 
     $(".filter-button").click(function(){
